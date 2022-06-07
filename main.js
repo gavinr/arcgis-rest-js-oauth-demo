@@ -15,6 +15,7 @@ arcgisRest.ArcGISIdentityManager.completeOAuth2(opts)
   })
   .catch((e) => {
     console.log("Note:", e);
+    resultsDomNode.innerHTML = e;
   });
 
 // When the login button is clicked, call beginOAuth2:
@@ -26,5 +27,6 @@ loginButton.addEventListener("click", () => {
     })
     .catch((e) => {
       console.log("Error", e);
+      resultsDomNode.innerHTML = e;
     });
 });

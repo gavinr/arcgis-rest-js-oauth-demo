@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>OAuth Demo - ArcGIS REST JS</title>
+    <script src="https://unpkg.com/@esri/arcgis-rest-request@4/dist/bundled/request.umd.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css"
+    />
+    <style>
+      .wrapper .results {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container padding-leader-1 padding-trailer-3">
+      <h1>ArcGIS-REST-JS OAuth Demo</h1>
+      <div class="wrapper column-24">
+        <p>
+          A minimal example for OAuth Login with ArcGIS REST JS. Click "Login"
+          to get started.
+          <a
+            href="https://developers.arcgis.com/arcgis-rest-js/"
+            target="_blank"
+            >Documentation</a
+          >
+        </p>
+
+        <p><button class="btn" id="loginButton">Login</button></p>
+
+        <p id="errorDomNode" class="error alert alert-red"></p>
+        <h3>Results:</h3>
+        <pre
+          class="results"
+          id="resultsDomNode"
+        ><span style="color:gray">[none yet]</span></pre>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
